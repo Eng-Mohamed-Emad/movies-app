@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="row g-2">
+        @for (movie of allSeries; track movie.id) {
+           <app-movie-card class="col-md-3" [movie]="movie"></app-movie-card>
+        }
+    </div>
+</div>
